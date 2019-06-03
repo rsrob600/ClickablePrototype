@@ -1,0 +1,82 @@
+/*
+    Sherpa Adventures HTML5 Bootstrap Sass
+    Author: Robert Scott
+    Version 0.0.1
+*/
+/* BASE - Base style, variables, mixins, etc */
+/* line 1, ../../../OneDrive/DEV/GitHub/00-MERIT-AMERICA/Projects/Week-4/0-Assignments/robert_scott_clickablePrototype/scss/base/_base.scss */
+.main-body {
+  background: #edeff1;
+}
+
+/* MODULES - Individual components */
+/* line 2, ../../../OneDrive/DEV/GitHub/00-MERIT-AMERICA/Projects/Week-4/0-Assignments/robert_scott_clickablePrototype/scss/modules/_components.scss */
+.product-thumb {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  display: block;
+}
+
+/* line 10, ../../../OneDrive/DEV/GitHub/00-MERIT-AMERICA/Projects/Week-4/0-Assignments/robert_scott_clickablePrototype/scss/modules/_components.scss */
+.small-charts {
+  width: 210px;
+  height: 110px;
+  object-fit: cover;
+  display: inline-block;
+}
+
+/* line 18, ../../../OneDrive/DEV/GitHub/00-MERIT-AMERICA/Projects/Week-4/0-Assignments/robert_scott_clickablePrototype/scss/modules/_components.scss */
+.large-charts {
+  width: 800px;
+  height: 450px;
+  object-fit: contain;
+  display: inline-flex;
+}
+
+/* LAYOUTS - Page layout styles */
+/* line 3, ../../../OneDrive/DEV/GitHub/00-MERIT-AMERICA/Projects/Week-4/0-Assignments/robert_scott_clickablePrototype/scss/layouts/_nav.scss */
+.sidebar a.nav-link:hover {
+  color: #393a3b;
+  text-decoration: none;
+}
+
+/* line 8, ../../../OneDrive/DEV/GitHub/00-MERIT-AMERICA/Projects/Week-4/0-Assignments/robert_scott_clickablePrototype/scss/layouts/_nav.scss */
+.sidebar a.nav-link {
+  color: #797b7e;
+}
+
+/* line 12, ../../../OneDrive/DEV/GitHub/00-MERIT-AMERICA/Projects/Week-4/0-Assignments/robert_scott_clickablePrototype/scss/layouts/_nav.scss */
+.sidebar a.nav-link.active {
+  color: #268AFE;
+}
+
+/* line 21, ../../../OneDrive/DEV/GitHub/00-MERIT-AMERICA/Projects/Week-4/0-Assignments/robert_scott_clickablePrototype/scss/main.scss */
+.login-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background: #616366;
+  color: #d2d4d6;
+}
+
+/* line 27, ../../../OneDrive/DEV/GitHub/00-MERIT-AMERICA/Projects/Week-4/0-Assignments/robert_scott_clickablePrototype/scss/main.scss */
+.login-container .logo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* line 34, ../../../OneDrive/DEV/GitHub/00-MERIT-AMERICA/Projects/Week-4/0-Assignments/robert_scott_clickablePrototype/scss/main.scss */
+.login-container .login-form {
+  max-width: 100%;
+  width: 370px;
+  padding: 15px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=main.css.map */

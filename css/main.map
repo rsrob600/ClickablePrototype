@@ -1,0 +1,26 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/base/_variables.scss",
+		"../scss/base/_mixins.scss",
+		"../scss/base/_base.scss",
+		"../scss/modules/_typography.scss",
+		"../scss/modules/_components.scss",
+		"../scss/layouts/_nav.scss",
+		"../scss/layouts/_header.scss"
+	],
+	"sourcesContent": [
+		"/*\r\n    Sherpa Adventures HTML5 Bootstrap Sass\r\n    Author: Robert Scott\r\n    Version 0.0.1\r\n*/\r\n\r\n/* BASE - Base style, variables, mixins, etc */\r\n@import 'base/variables';\r\n@import 'base/mixins';\r\n@import 'base/base';\r\n\r\n/* MODULES - Individual components */\r\n@import 'modules/typography';\r\n@import 'modules/components';\r\n\r\n/* LAYOUTS - Page layout styles */\r\n@import 'layouts/nav';\r\n@import 'layouts/header';\r\n\r\n// Login Page Start ============================\r\n.login-container {\r\n    @include flexCenter();\r\n    font-size: 14px;\r\n    background: $primaryBg;\r\n    color: $text-color;\r\n\r\n    .logo {\r\n        width: 100%;\r\n        height: auto;\r\n        object-fit: cover;\r\n        display: block;\r\n    }\r\n\r\n    .login-form {\r\n        max-width: 100%;\r\n        width: 370px;\r\n        padding: 15px;\r\n        margin: auto;\r\n    }\r\n}",
+		"$primaryBg : #616366;\r\n$secondaryBg : #edeff1;\r\n$text-color : #d2d4d6;\r\n$navlinkActive : #268AFE;\r\n$navlinkInActive : #797b7e;\r\n$navlinkHover : #393a3b;",
+		"@mixin flexCenter {\r\n    height: 100vh;\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}",
+		".main-body {\r\n    background: $secondaryBg;\r\n}\r\n\r\n// for sidebar topo background image\r\n// .sidebar {  \r\n//     background-image: url(image link to topo url goes here)\r\n// }",
+		"$font-family : Helvetica,\r\nArial,\r\nsans-serif;",
+		"// product page thumbnail box\r\n.product-thumb {\r\n    width: 40px;\r\n    height: 40px;\r\n    object-fit: cover;\r\n    display: block;\r\n}\r\n\r\n// dashboard small charts box\r\n.small-charts {\r\n    width: 210px;\r\n    height: 110px;\r\n    object-fit: cover;\r\n    display: inline-block;\r\n}\r\n\r\n// dashboard large charts box\r\n.large-charts {\r\n    width: 800px;\r\n    height: 450px;\r\n    object-fit: contain;\r\n    display: inline-flex;\r\n}",
+		".sidebar {\r\n\r\n    a.nav-link:hover {\r\n        color: $navlinkHover;\r\n        text-decoration: none;\r\n    }\r\n\r\n    a.nav-link {\r\n        color: $navlinkInActive;\r\n    }\r\n\r\n    a.nav-link.active {\r\n        color: $navlinkActive;\r\n    }\r\n}\r\n\r\n// .sidebar {\r\n\r\n//     .nav-link a:hover {\r\n//         color: $navlinkHover;\r\n//         text-decoration: none;\r\n//     }\r\n\r\n//     .nav-link a {\r\n//         color: $navlinkInActive;\r\n//     }\r\n\r\n//     .nav-link a.active {\r\n//         color: $navlinkActive;\r\n//     }\r\n// }",
+		"// .navbar-brand {  // need to add a company logo image with href link\r\n//     font-size: 1.4em;\r\n// }"
+	],
+	"names": [],
+	"mappings": "AAAA;;;;EAIE;AAEF,+CAA+C;;AGN/C,AAAA,UAAU,CAAC;EACP,UAAU,EFAC,OAAO;CECrB;;AHSD,qCAAqC;;AKVrC,AAAA,cAAc,CAAC;EACX,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,KAAK;CACjB;;;AAGD,AAAA,aAAa,CAAC;EACV,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,YAAY;CACxB;;;AAGD,AAAA,aAAa,CAAC;EACV,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,OAAO;EACnB,OAAO,EAAE,WAAW;CACvB;;ALPD,kCAAkC;;AMflC,AAEI,QAFI,CAEJ,CAAC,AAAA,SAAS,AAAA,MAAM,CAAC;EACb,KAAK,ELEG,OAAO;EKDf,eAAe,EAAE,IAAI;CACxB;;;AALL,AAOI,QAPI,CAOJ,CAAC,AAAA,SAAS,CAAC;EACP,KAAK,ELJM,OAAO;CKKrB;;;AATL,AAWI,QAXI,CAWJ,CAAC,AAAA,SAAS,AAAA,OAAO,CAAC;EACd,KAAK,ELTI,OAAO;CKUnB;;;ANOL,AAAA,gBAAgB,CAAC;EEnBb,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EFiBnB,SAAS,EAAE,IAAI;EACf,UAAU,ECvBD,OAAO;EDwBhB,KAAK,ECtBK,OAAO;CDqCpB;;;AAnBD,AAMI,gBANY,CAMZ,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,KAAK;CACjB;;;AAXL,AAaI,gBAbY,CAaZ,WAAW,CAAC;EACR,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,IAAI;CACf"
+}

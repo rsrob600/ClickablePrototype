@@ -1,0 +1,40 @@
+/*
+    Sherpa Adventures HTML5 Bootstrap Sass
+    Author: Robert Scott
+    Version 0.0.1
+*/
+
+/* BASE - Base style, variables, mixins, etc */
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/base';
+
+/* MODULES - Individual components */
+@import 'modules/typography';
+@import 'modules/components';
+
+/* LAYOUTS - Page layout styles */
+@import 'layouts/nav';
+@import 'layouts/header';
+
+// Login Page Start ============================
+.login-container {
+    @include flexCenter();
+    font-size: 14px;
+    background: $primaryBg;
+    color: $text-color;
+
+    .logo {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    .login-form {
+        max-width: 100%;
+        width: 370px;
+        padding: 15px;
+        margin: auto;
+    }
+}

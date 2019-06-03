@@ -1,0 +1,23 @@
+// product page thumbnail box
+.product-thumb {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    display: block;
+}
+
+// dashboard small charts box
+.small-charts {
+    width: 210px;
+    height: 110px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+// dashboard large charts box
+.large-charts {
+    width: 800px;
+    height: 450px;
+    object-fit: contain;
+    display: inline-flex;
+}
